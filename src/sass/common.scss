@@ -11,7 +11,8 @@
   font-weight: normal;
   font-style: normal;
 }
-*[class*="ico_font_"]:before,//클래스가 포함되어 있으면
+/*클래스가 포함되어 있으면*/
+*[class*="ico_font_"]:before,
 *[class*="ico_font_"]:after{
 	font-family: 'fontello';
 }
@@ -28,6 +29,9 @@ img, video {
 	}
 fieldset{border:none;}
 a{text-decoration:none;color:#333;}
+a:hover, a:focus{
+	color:#415ce1;
+}
 html{font-size:14px;}
 body, input[type=text],
 input[type=tel], input[type=url], input[type=search], input[type=password], 
@@ -41,4 +45,131 @@ h1,h2,h3,h4,h5,h6, strong, em, address{
 	font-weight:normal;
 	font-style:normal;
 	}
+	.clearFix:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.clearFix {*zoom:1;}
+
 .blind {position:absolute;left:9999px;}
+#header{
+	position:realtive;
+	border-bottom:1px solid #999;
+	box-shadow:0 2px 3px rgba(0,0,0,0.3);
+	padding-bottom:20px;
+	margin-bottom:20px;
+	#gnb{
+		li{
+			float:left;
+			padding:0 20px;
+			height:53px;
+			}
+		figure{
+			font-size:12px;
+			text-align:center;
+			&:before{
+				font-size:22px;
+			}
+		
+		}
+		.ico_font_1:before{
+			content:"\e80e";
+		}
+		.ico_font_2:before{
+			content:"\f27a";
+		}
+		.ico_font_3:before{
+			content:"\e80b";
+		}
+		.ico_font_4:before{
+			content:"\f278";
+		}
+		.ico_font_5:before{
+			content:"\e80d";
+		}
+	}
+}
+#header h1{
+	background-color:#5580cf;
+	text-align:center;
+	padding:8px 0;
+	margin-bottom:20px;
+	}
+	.login{
+	position:absolute;
+	top:4px;
+	right:0;
+	font-size:10px;
+		a {
+			display:block;
+			text-align:center;
+			border-radius:3px;
+			width:69px;
+			height:28px;
+			line-height:28px;
+			color:#fff;
+			text-shadow:0 0 2px rgba(0,0,0,0.7);
+			background-color:red;
+			border:1px solid rgba(29,45,27,0.6);
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#729be6+0,6790dd+50,5e88d6+51,5580cf+100 */
+background: rgb(114,155,230); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(114,155,230,1) 0%, rgba(103,144,221,1) 50%, rgba(94,136,214,1) 51%, rgba(85,128,207,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(114,155,230,1) 0%,rgba(103,144,221,1) 50%,rgba(94,136,214,1) 51%,rgba(85,128,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(114,155,230,1) 0%,rgba(103,144,221,1) 50%,rgba(94,136,214,1) 51%,rgba(85,128,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#729be6', endColorstr='#5580cf',GradientType=0 ); /* IE6-9 */
+		}
+	}
+
+.grid {
+	.row:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.row{*zoom:1;}
+
+	*[class*="col_pc_"] {
+		float:left; /* grid의 모든요소중 class에 col_pc_를 포함하고 있으면..float:left */
+	}
+	.col_pc_1 {
+		width:8.33333%;
+	}
+	.col_pc_2 {
+		width:8.33333%*2;
+	}
+	.col_pc_3 {
+		width:8.33333%*3;
+	}
+	.col_pc_4 {
+		width:8.33333%*4;
+	}
+	.col_pc_5 {
+		width:8.33333%*5;
+	}
+	.col_pc_6 {
+		width:8.33333%*6;
+	}
+	.col_pc_7 {
+		width:8.33333%*7;
+	}
+	.col_pc_8 {
+		width:8.33333%*8;
+	}
+	.col_pc_9 {
+		width:8.33333%*9;
+	}
+	.col_pc_10 {
+		width:8.33333%*10;
+	}
+	.col_pc_11 {
+		width:8.33333%*11;
+	}
+	.col_pc_12 {
+		width:100%;
+	}
+	.col {
+		padding:10px;
+	}
+}
+

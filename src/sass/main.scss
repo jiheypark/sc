@@ -1,0 +1,41 @@
+@charset "utf-8";
+.main_list {
+	margin-bottom:10px;
+	h3{
+		border-top:1px solid #bbb;
+		border-bottom:1px solid #999;
+		padding:10px 10px;
+		color:#000;
+		font-weight:bold;
+		background-color:#aaa;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+	}
+	li{
+		padding:10px 45px 10px 10px;
+		border-bottom:1px dotted #ccc;
+		position:relative;
+		white-space:nowrap;/*텍스트 한줄로 표현 감싸지 말라는뜻으로 일자로 쭉 글 나오게*/
+		overflow:hidden;
+		text-overflow:ellipsis; /* ...으로 나옴 */
+
+		span{
+			position:absolute;
+			right:10px;
+			top:4px;
+			display:inline-block;
+			width:30px;
+			height:30px;
+			border:1px solid #ccc;
+			border-radius:50%;
+			text-align:center;
+			line-height:27px;
+			color:#415ce1;
+		}
+	}
+}
